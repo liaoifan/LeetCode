@@ -29,7 +29,6 @@ public:
 				}
 			}
 		}
-		cout << "\n";
 
         return answer;
     }
