@@ -67,9 +67,9 @@ int main(int argc, char *argv[]) {
 
   int test_case_index = 0;
   Solution solution;
-  for (auto &test_cases : test_cases) {
-    if (solution.isValid(test_cases.input) ==
-        test_cases.expected_output) {  //將回傳值和答案做比較
+  for (auto &test_case : test_cases) {
+    if (solution.isValid(test_case.input) ==
+        test_case.expected_output) {  //將回傳值和答案做比較
       cout << "test_case[" << test_case_index << "] is pass." << endl;
     } else {
       cout << "test_case[" << test_case_index << "] is fail." << endl;
