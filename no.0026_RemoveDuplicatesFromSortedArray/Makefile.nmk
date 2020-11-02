@@ -1,0 +1,7 @@
+
+all:
+	cppcheck --enable=all --inconclusive removeDuplicates.cpp
+	cl -W4 -O2 removeDuplicates.cpp
+
+clean:
+	del removeDuplicates.exe
