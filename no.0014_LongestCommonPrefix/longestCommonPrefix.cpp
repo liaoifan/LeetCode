@@ -24,7 +24,7 @@ class Solution {
       compare = startString[i];
 
       for (
-          int j = 1; j < strs.size();
+          unsigned int j = 1; j < strs.size();
           j++) {  //控制和第幾個字串比較的迴圈，因為第0個字串已經被拿來比較了，所以從第1個字串開始比
 
         compareString = strs[j];  //將要拿來比較的字串放入compareString中

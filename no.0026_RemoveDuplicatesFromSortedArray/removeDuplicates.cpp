@@ -16,7 +16,7 @@ class Solution {
 
     for (ptr = nums.begin() + 1; ptr != nums.end(); ptr++) {
       if (*ptr == *(ptr - 1)) {
-        nums.erase(ptr);
+        nums.erase(ptr - 1);
         ptr--;
       }
     }

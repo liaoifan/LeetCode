@@ -28,13 +28,11 @@ class Solution {
     }
 
     int zeroes = 0;
-    //		vector<int>::iterator ptr_end = nums.end();
-    for (ptr = nums.begin(); ptr != nums.end(); ptr++) {
-      if (*ptr == 0) {
-        nums.erase(ptr);
+    for (ptr = nums.begin() + 1; ptr != nums.end() + 1; ptr++) {
+      if (*(ptr - 1) == 0) {
+        nums.erase(ptr - 1);
         ptr--;
         zeroes++;
-        //		nums.push_back(0);
       }
     }
 

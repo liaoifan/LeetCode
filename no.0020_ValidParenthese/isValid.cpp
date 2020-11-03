@@ -32,12 +32,12 @@ class Solution {
     for (int i = 0; i < times; i++) {
       for (
           ptr = input.begin(); ptr < input.end() - 1;
-          ptr++) {  //用iterator走訪input，尋找相鄰的左右刮號"()"、"[]"、"{}"並將其移除
+          ++ptr) {  //用iterator走訪input，尋找相鄰的左右刮號"()"、"[]"、"{}"並將其移除
         if ((*ptr == '(' && *(ptr + 1) == ')') ||
             (*ptr == '[' && *(ptr + 1) == ']') ||
             (*ptr == '{' && *(ptr + 1) == '}')) {
           input.erase(ptr, ptr + 2);  //從input中移除相鄰的左右括號
-          ptr--;  //因為移除資料需要將ptr向前offset 1
+          --ptr;  //因為移除資料需要將ptr向前offset 1
         }
       }
     }

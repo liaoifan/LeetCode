@@ -9,11 +9,11 @@ class Solution {
     vector<int>::iterator ptr;
     int i = 0;  //計算目前指到第幾個位置
 
-    for (ptr = nums.begin(); ptr != nums.end(); ptr++) {
+    for (ptr = nums.begin(); ptr != nums.end(); ++ptr) {
       if (target <= *ptr) {
         return i;
       }
-      i++;
+      ++i;
     }
     return i;
   }
