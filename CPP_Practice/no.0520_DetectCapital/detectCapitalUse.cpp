@@ -19,7 +19,7 @@ class Solution {
     }
 
     //先判斷是單字大小寫的開頭是AA、Aa、aa的型式：AA => 1 、Aa => 2 、aa =>
-    //3、其他 => false
+    // 3、其他 => false
 
     if (isupper(*ptr) && isupper(*(ptr + 1))) {  // AA開頭
       num = 1;
