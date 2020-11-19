@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-char *longestCommonPrefix(char **strs, int strsSize) {  //看不懂引入的函數
+char *longestCommonPrefix(char **strs, int strsSize) {  //看不懂引入的參數
 
   int answer_length = 0;
   bool compare_flag = true;

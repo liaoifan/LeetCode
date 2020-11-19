@@ -43,7 +43,7 @@ bool detectCapitalUse(char *word) {
 }
 
 int main(int argc, char *argv[]) {
-  char word[] = {'a', 'B', 'c'};
+  char word[] = {"aBc"};
 
   if (detectCapitalUse(word)) {
     printf("通過\n");

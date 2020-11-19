@@ -4,4 +4,4 @@ all:
 
 clean:
 	clear
-	m -f *.out
+	rm -f *.out
